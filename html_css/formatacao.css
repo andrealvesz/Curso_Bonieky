@@ -1,0 +1,12 @@
+p {
+    color: #0000ff;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: serif;
+    text-align: justify;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+}

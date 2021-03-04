@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background: #ff9900fd;
+    width: 100%;
+    /* max-width: 1200 px; */
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+p {
+    padding: 10px;
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+.cidade {
+    width: 25%;
+    float: left;
+    margin-top: 15px;
+}
+
+@media only screen and (min-width:500px) and (max-width:800px) {
+
+    .cidade {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:499px) {
+    .cidade {
+        width: 100%;
+    }
+}

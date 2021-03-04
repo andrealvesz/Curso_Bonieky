@@ -1,0 +1,30 @@
+.container {
+    background: #DDDDDD;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*flex-wrap: wrap;  O valor wrap especifica que os itens flexíveis serão agrupados (quebrando a linha), se necessário.
+    align-content: space-around; A propriedade align-content é usada em conjunto com o flex-wrap */
+
+    /* flex-flow: column wrap; A propriedade flex-flow é uma propriedade abreviada para definir as propriedades flex-direction e flex-wrap. */
+
+    /* flex-direction: column;  O valor column empilha os itens flexíveis verticalmente (de cima para baixo) */
+    
+}
+
+.container div {
+    background: #f00;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 80px;
+}
+
+/* .div8 {
+    align-self: flex-start;  A propriedade align-self substitui o alinhamento padrão definido pela propriedade align-items do contêiner .
+} */

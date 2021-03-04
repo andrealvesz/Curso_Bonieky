@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 10px 0;
+}
+
+section h2{
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.pa-5, textarea {
+    padding: 5px;
+    width: 400px;
+    font-size: 15px;
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+.termoslink {
+    color: #000;
+    text-decoration: none;
+}
+
+.termoslink:hover {
+    text-decoration: underline;
+    color: #00f;
+}
+
+.bot_enviar {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #CCC;
+    background: #eee;
+}
+
+.bot_enviar:hover {
+    background: #ddd;
+}
