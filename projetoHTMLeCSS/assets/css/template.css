@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+
+} 
+
+/* ================ HEADER =================== */
+
+header {
+    display: flex;
+    justify-content: center;
+    height:120px;
+}
+
+.container {
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul, 
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+
+nav .active, 
+nav a:hover {
+    background: #39aae1;
+    color: #fff;
+}
+
+/* ================= BANNER ======================== */
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.title-banner-principal {    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-banner-principal h1 {
+    font-size: 70px;
+    font-family: Arial;
+    color: #fff;
+    text-shadow: 0 1px 0 #555;
+    max-width: 350px;
+    margin: 0;
+    padding: 0;
+}
+
+.title-banner-principal h2 {
+    max-width: 350px;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    font-size: 18px;
+    text-shadow: 0 1px 0 #555;
+    color: #fff;
+}
+
+.banner-options {
+    height: 210px;
+    display: flex;
+    color: #ffffff;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    padding: 20px;
+    }
+
+.banner1 {
+    background: #39aae1;
+}
+
+.banner2 {
+    background: #0079c7;
+}
+
+.banner3 {
+    background: #2b4c99;
+}
+
+.title-banner-secundario {
+    font-size: 17px;
+}
+
+.banner-desc {
+    margin-top: 20px;
+}
+
+.banner-options a {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.table-days-hours {
+    margin-top: 10px;    
+}
+
+.days-hours {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #0079c7;
+    padding: 10px 0;
+}
