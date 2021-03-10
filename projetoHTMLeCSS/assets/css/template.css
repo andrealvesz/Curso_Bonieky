@@ -177,7 +177,68 @@ nav a:hover {
     background: #39aae1;
 }
 
-.departmentscontent {
+.news-article {
+    display: flex;
+    flex-wrap: wrap;     
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+.news-data {
+    display: flex;
+}
+
+article .news-posted-at,
+.news-comments {
+    padding: 10px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top:  20px;
+}
+
+.news-posted-at {
+    margin-right: 2px;
+    background: #2b4c99;
+}
+
+.news-comments {
+    background: #39aae1;
+}
+
+.news-thumbnail {
+    margin-top: 30px;
+}
+
+.news-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.news-title {
+    margin: 25px 0;
+    width: 300px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.news-content {
+    color: #5C5C5C;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+aside .departmentscontent {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -187,7 +248,7 @@ nav a:hover {
     width: 150px; 
     height: 150px;
     background: #39aae1;
-    margin-bottom: 25px; 
+    margin-bottom: 30px; 
 }
 
 .departmentscontent .ma-0 {
@@ -224,64 +285,4 @@ nav a:hover {
     margin-left: 5px;
     text-decoration: none;
     color: #000000;
-}
-
-.news-article {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;     
-}
-
-article .news-data {
-    display: flex;
-}
-
-article .news-posted-at,
-.news-comments {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: bold;
-    margin-top:  20px;
-    margin-bottom: 40px;
-}
-
-.news-posted-at {
-    width: 95px;
-    height: 45px;
-    margin-right: 2px;
-    background: #2b4c99;
-    border: 1px solid #0079c7;
-}
-
-.news-comments {
-    width: 45px;
-    height: 45px;
-    background: #39aae1;
-    border: 1px solid #727272;
-
-}
-
-.news-image img {
-    width: 300px;
-    height: 200px;
-}
-
-.news-title {
-    margin: 20px 0;
-    width: 300px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.news-content {
-    width: 300px;
-    text-align: justify;
-    margin-bottom: 20px;
-}
-
-.ma-right {
-    margin-right: 30px;
 }
