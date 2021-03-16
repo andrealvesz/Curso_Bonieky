@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
-
 }
 
 /* ================ HEADER =================== */
@@ -11,7 +10,7 @@
 header {
     display: flex;
     justify-content: center;
-    height:120px;
+    height: 120px;
 }
 
 .container {
@@ -30,8 +29,7 @@ header {
     align-items: center;
 }
 
-nav ul, 
-nav li {
+nav ul, nav li {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -49,8 +47,7 @@ nav a {
     color: #727272;
 }
 
-nav .active, 
-nav a:hover {
+nav .active, nav a:hover {
     background: #39aae1;
     color: #fff;
 }
@@ -70,7 +67,7 @@ nav a:hover {
     flex-direction: column;
 }
 
-.title-banner-principal {    
+.title-banner-principal {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -103,12 +100,10 @@ nav a:hover {
     color: #ffffff;
 }
 
-.banner1,
-.banner2,
-.banner3 {
+.banner1, .banner2, .banner3 {
     flex: 1;
     padding: 20px;
-    }
+}
 
 .banner1 {
     background: #39aae1;
@@ -126,7 +121,8 @@ nav a:hover {
     font-size: 17px;
 }
 
-.banner-desc {
+.banner-desc,
+.menu-desc {
     margin-top: 20px;
 }
 
@@ -140,7 +136,7 @@ nav a:hover {
 }
 
 .table-days-hours {
-    margin-top: 10px;    
+    margin-top: 10px;
 }
 
 .days-hours {
@@ -163,14 +159,16 @@ nav a:hover {
 
 #content-page aside {
     flex: 1;
-   }
+}
 
-.widget-title {
+.widget-title,
+.area-title {
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.widget-title-bar {
+.widget-title-bar,
+.area-title-bar {
     width: 60px;
     height: 2px;
     margin-top: 10px;
@@ -179,7 +177,7 @@ nav a:hover {
 
 .news-article {
     display: flex;
-    flex-wrap: wrap;     
+    flex-wrap: wrap;
 }
 
 article {
@@ -196,13 +194,12 @@ article a {
     display: flex;
 }
 
-article .news-posted-at,
-.news-comments {
+article .news-posted-at, .news-comments {
     padding: 10px;
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
-    margin-top:  20px;
+    margin-top: 20px;
 }
 
 .news-posted-at {
@@ -245,10 +242,10 @@ aside .departmentscontent {
 }
 
 .departmentscontent div {
-    width: 150px; 
+    width: 150px;
     height: 150px;
     background: #39aae1;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 
 .departmentscontent .ma-0 {
@@ -261,18 +258,14 @@ aside .departmentscontent {
     border-bottom: 1px solid #CCCCCC;
 }
 
-.contact-phone,
-.contact-insta,
-.contact-email {
+.contact-phone, .contact-insta, .contact-email {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #CCCCCC;
     padding: 10px 0;
 }
 
-.contact-phone img,
-.contact-insta img,
-.contact-email img {
+.contact-phone img, .contact-insta img, .contact-email img {
     display: flex;
     align-items: center;
     width: 25px;
@@ -280,9 +273,140 @@ aside .departmentscontent {
     margin-right: 10px;
 }
 
-.space-tel,
-.space-email {
+.space-tel, .space-email {
     margin-left: 5px;
     text-decoration: none;
     color: #000000;
+}
+
+/* =============================FOOTER=============================== */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: #080808;
+    /* height: 500px; */
+}
+
+.footer-menu {
+    display: flex;
+    height: 100px;
+}
+
+.fm-1, .fm-2, .fm-3 {
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+.fm-1 {
+    background: #39aae1;
+}
+
+.fm-2 {
+    background: #0079c7;
+}
+
+.fm-3 {
+    background: #2b4c99;
+}
+
+.fas.fa-long-arrow-alt-right {
+    margin-left: 10px;
+}
+
+.menu-desc a:visited {
+    color: #ffffff;
+  }
+
+.footer-area {
+    display: flex;
+    /* background: #f00; */
+}
+
+.area-item {
+    flex: 1;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+footer .widget-title-text {
+    color: #fff;
+}
+
+.content-area {
+    margin: 25px 0;
+}
+
+.content-area,
+.local,
+.contact {
+    color: #929292;
+}
+
+.local-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    color: #929292;
+    align-self: flex-end; 
+    margin-right: 15px;  
+}
+
+.contact p:last-child {
+    color: #fff;
+}
+
+.social-area a{
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.fa-facebook-square,
+.fa-envelope,
+.fa-instagram {
+    background: #272727;
+    opacity: 0.5;
+    padding: 8px;
+    color: #b1b1b1;
+}
+
+.content-area-posts a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.content-area-posts a:visited {
+    color: #fff;
+}
+
+.content-area-posts p {
+    margin-left: 22px;
+}
+
+.content-area-posts p:first-child, 
+.content-area-posts .fa-long-arrow-alt-right {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.last-post {
+    color: #39aae1;
+    margin: 7px 0 18px;
+}
+
+.tweets p {
+    color: #929292;
+}
+
+.tweets .fa-long-arrow-alt-right {
+    color: #fff;
+}
+
+.tweets .last-post {
+    color: #39aae1;
 }

@@ -14,10 +14,10 @@ input {
 }
 
 .hamburguer {
-    width: 300px;
-    height: 300px;
+    width: 40px;
+    height: 40px;
 
-    background: #333;
+    /* background: #333; */
 
     border-radius: 10%;
 
