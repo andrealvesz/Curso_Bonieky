@@ -24,6 +24,19 @@ header {
     align-items: center;
 }
 
+.menu-mobile {
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.mm-line {
+    width: 30px;
+    height: 3px;
+    border-radius: 20px;
+    background: #39aae1;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -121,8 +134,7 @@ nav .active, nav a:hover {
     font-size: 17px;
 }
 
-.banner-desc,
-.menu-desc {
+.banner-desc, .menu-desc {
     margin-top: 20px;
 }
 
@@ -161,14 +173,12 @@ nav .active, nav a:hover {
     flex: 1;
 }
 
-.widget-title,
-.area-title {
+.widget-title, .area-title {
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.widget-title-bar,
-.area-title-bar {
+.widget-title-bar, .area-title-bar {
     width: 60px;
     height: 2px;
     margin-top: 10px;
@@ -317,7 +327,7 @@ footer {
 
 .menu-desc a:visited {
     color: #ffffff;
-  }
+}
 
 .footer-area {
     display: flex;
@@ -339,9 +349,7 @@ footer .widget-title-text {
     margin: 25px 0;
 }
 
-.content-area,
-.local,
-.contact {
+.content-area, .local, .contact {
     color: #929292;
 }
 
@@ -352,23 +360,21 @@ footer .widget-title-text {
 
 .contact {
     color: #929292;
-    align-self: flex-end; 
-    margin-right: 15px;  
+    align-self: flex-end;
+    margin-right: 15px;
 }
 
 .contact p:last-child {
     color: #fff;
 }
 
-.social-area a{
+.social-area a {
     margin-top: 20px;
     display: inline-block;
     text-decoration: none;
 }
 
-.fa-facebook-square,
-.fa-envelope,
-.fa-instagram {
+.fa-facebook-square, .fa-envelope, .fa-instagram {
     background: #272727;
     opacity: 0.5;
     padding: 8px;
@@ -388,8 +394,7 @@ footer .widget-title-text {
     margin-left: 22px;
 }
 
-.content-area-posts p:first-child, 
-.content-area-posts .fa-long-arrow-alt-right {
+.content-area-posts p:first-child, .content-area-posts .fa-long-arrow-alt-right {
     margin-left: 0;
     margin-right: 8px;
 }
@@ -409,4 +414,127 @@ footer .widget-title-text {
 
 .tweets .last-post {
     color: #39aae1;
+}
+
+.footer-copy {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+    color: #4d4d4d;
+    border-top: 1px solid #4d4d4d;
+}
+
+/* =====================MEDIA QUERY======================= */
+
+@media (max-width:989px) {
+    header,
+    .title-banner-principal,
+    #content-page,
+    .footer-area {
+        padding: 20px;
+    }
+
+    .departmentscontent.jc-mobile {
+        justify-content: center;
+    }
+    .ma-mobile {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .ma-0.ma-mobile {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:959px) {
+    .departmentscontent.jc-mobile {
+        justify-content: center;
+    }
+    .ma-mobile {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .ma-0.ma-mobile {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:917px) {
+    .footer-menu {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:767px) {
+    header {
+        height: auto;
+    }
+
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+    }
+
+    #banner {
+        height: 770px;
+        background-position: -500px;
+    }
+    .banner-options {
+        height: auto;
+        flex-direction: column;
+    }
+    .title-banner-principal {
+        padding: 20px;
+    }
+    .title-banner-principal h1 {
+        font-size: 60px;
+    }
+    .title-banner-principal h2 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    #content-page {
+        padding: 20px;
+    }
+    #content-page .container {
+        flex-direction: column;
+    }
+    .footer-menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .footer-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-copy {
+        text-align: center;
+    }
+}
+
+@media (max-width:480px) {
+    #banner {
+        background-position: -800px;
+    }
+
+    .title-banner-principal h1 {
+        font-size: 50px;
+    }
+    .title-banner-principal h2 {
+        font-size: 15px;
+        margin-top: 20px;
+    }
 }
