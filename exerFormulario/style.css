@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    width: 250px;
+    height: 100vh;
+    padding-top: 30px;
+    background: #dadada;
+}
+
+nav ul a li {
+    padding: 10px;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #2081d1;
+    font-weight: 550;
+}
+
+nav ul li:hover {
+    background: #2081d1;
+    transition: .5s ease;
+}
+
+nav ul a:visited {
+    color: #2081d1;
+}
+
+nav ul a li:hover,
+nav ul a li:hover:visited {
+    color: #e9e4e4;
+}
+
+.cadastro {
+    padding: 15px 30px;
+}
+
+.title .formTitle {
+    margin-bottom: 30px;
+}
+
+.formTitle {
+    width: 990px;
+    border-bottom: 1px solid #dadada;
+}
+
+.formTitle h1, h2 {
+    font-weight: 500;
+}
+
+.formContent form {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    /* width: 50%; */
+}
+
+.formContent label {
+    display: block;
+    padding: 5px;
+    width: 100%;
+}
+
+.formContent input {
+    padding: 5px;
+    border: 2px solid #2081d1;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.formLeft {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    position: relative;
+    width: 50%;
+}
+
+/* .formLeft input {
+   width: 100%;
+} */
+/* 
+.pront input {
+    width: 240px;
+} */
+
+.datebirth input {
+    width: 50%;
+    flex: 1;
+}
+
+.curso select {
+    /* width: 100%; */
+}
