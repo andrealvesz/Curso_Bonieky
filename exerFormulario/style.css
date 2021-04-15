@@ -214,7 +214,6 @@ nav ul a li:hover:visited {
     grid-area: tel;
 }
 
-
 .formRight .laCel {
     grid-area: laCel;
     display: flex;
@@ -226,7 +225,6 @@ nav ul a li:hover:visited {
 .formRight input[name="cel"] {
     grid-area: cel;
 }
-
 
 .formRight .laEmail {
     grid-area: laEmail;
@@ -246,4 +244,146 @@ nav ul a li:hover:visited {
 
 .formRight input[name="vazio"] {
     visibility: hidden;
+}
+
+.formContent.Resp form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'formLeftResp formRightResp'
+        'buttonEnviar buttonLimpar';
+    gap: 30px;
+    padding: 20px;
+}
+
+.buttonEnviar {
+    grid-area: buttonEnviar;
+
+    display:flex;
+    justify-content:flex-end;
+}
+
+.buttonEnviar button {
+    background: #2081d1;
+    color: #fff;
+    padding:10px;
+    border: none;
+    border-radius: 3px;
+    transition: ease .5s;
+}
+
+.buttonEnviar button:hover {
+    background: #1a69aa;
+}
+
+.buttonLimpar {
+    grid-area: buttonLimpar;
+}
+
+.buttonLimpar button {
+    background: #ffa500;
+    color: #fff;
+    padding:10px;
+    border: none;
+    border-radius: 3px;
+    transition: ease .5s;
+}
+
+.buttonLimpar button:hover {
+    background: #d38a03;
+}
+
+.formLeftResp {
+    grid-area: formLeftResp;
+
+    display: grid;
+    grid-template-columns: 155px 2fr 1fr;
+    grid-template-areas:
+    'laNomeResp nameResp nameResp'
+    'laEmailResp emailResp emailResp' ;
+    align-items: center;
+    justify-items: end;
+    gap: 15px;
+}
+
+.laNomeResp {
+    grid-area: laNomeResp;
+
+    display:flex;
+    justify-content: flex-end;
+}
+
+input[name="nameResp"] {
+    grid-area: nameResp;
+}
+
+.laEmailResp {
+    grid-area: laEmailResp;
+
+    display:flex;
+    justify-content: flex-end;
+}
+
+input[name="emailResp"] {
+    grid-area: emailResp;
+}
+
+.formRightResp {
+    grid-area: formRightResp;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-areas:
+    'laCPFResp cpfResp laRGResp rgResp' 
+    'ladateBirthResp dateBirthResp laCelResp celResp';
+    align-items: center;
+    justify-items: end;
+    gap: 15px;
+}
+
+.laCPFResp {
+    grid-area: laCPFResp;
+
+    display:flex;
+    justify-content: flex-end;
+}
+
+input[name="cpfResp"] {
+    grid-area: cpfResp;
+
+    display:flex;
+    justify-content: flex-end;
+}
+
+.laRGResp {
+    grid-area: laRGResp;
+
+    display:flex;
+    justify-content: flex-end;
+}
+
+input[name="rgResp"] {
+    grid-area: rgResp;
+}
+
+.ladateBirthResp {
+    grid-area: ladateBirthResp;
+
+    display:flex;
+    justify-content: flex-end;
+}
+
+input[name="dateBirthResp"] {
+    grid-area: dateBirthResp;
+}
+
+.laCelResp {
+    grid-area: laCelResp;
+
+    display:flex;
+    justify-content: flex-end;
+}
+
+input[name="celResp"] {
+    grid-area: celResp;
 }
