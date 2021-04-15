@@ -19,10 +19,15 @@
     height: 100vh;
     padding-top: 30px;
     background: #dadada;
+    display: flex;
+}
+
+.menu nav {
+    width: 100%;
 }
 
 nav ul a li {
-    padding: 10px;
+    padding: 15px;
     list-style: none;
 }
 
@@ -41,7 +46,7 @@ nav ul a:visited {
     color: #2081d1;
 }
 
-nav ul a li:hover,
+nav ul a li:hover, 
 nav ul a li:hover:visited {
     color: #e9e4e4;
 }
@@ -64,49 +69,181 @@ nav ul a li:hover:visited {
 }
 
 .formContent form {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 15px;
-    /* width: 50%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
 }
 
 .formContent label {
-    display: block;
-    padding: 5px;
+    display: flex;
+    align-items: center;
     width: 100%;
 }
 
-.formContent input {
+.formContent input, .formContent select {
     padding: 5px;
     border: 2px solid #2081d1;
-    border-radius: 5px;
+    border-radius: 3px;
     outline: none;
-    margin-left: 10px;
-    margin-bottom: 20px;
     width: 100%;
 }
 
 .formLeft {
+    display: grid;
+    grid-template-columns: 155px 2fr 1fr;
+    grid-template-areas:
+    'laPront pront .'
+    'laName name name' 
+    'laDatebirth datebirth sexo' 
+    'laCurso curso curso';
+    align-items: center;
+    justify-items: end;
+    gap: 15px;
+}
+
+.formLeft .laPront {
+    grid-area: laPront;
     display: flex;
-    flex-direction: column;
-    /* justify-content: flex-end; */
-    position: relative;
-    width: 50%;
+    align-items: center;
+    padding: 5px;
+    justify-content: flex-end;
 }
 
-/* .formLeft input {
-   width: 100%;
-} */
-/* 
-.pront input {
-    width: 240px;
-} */
-
-.datebirth input {
-    width: 50%;
-    flex: 1;
+.formLeft input[name="prontuario"] {
+    grid-area: pront;
 }
 
-.curso select {
-    /* width: 100%; */
+.formLeft .laName {
+    grid-area: laName;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: flex-end;
+}
+
+.formLeft input[name="name"] {
+    grid-area: name;
+}
+
+.formLeft .datebirth {
+    grid-area: laDatebirth;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: flex-end;
+    width: 300px;
+}
+
+.formLeft input[name="datebirth"] {
+    grid-area: datebirth;
+    width: 150px;
+    display: flex;
+    justify-self: flex-start;
+}
+
+.formLeft select[name="sexo"] {
+    margin-left: 10px;
+    background: #fff;
+}
+
+.formLeft .sexo {
+    grid-area: sexo;
+}
+
+.formLeft .curso {
+    grid-area: laCurso;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: flex-end;
+    width: 300px;
+}
+
+.formLeft select[name="curso"] {
+    grid-area: curso;
+    background: #fff;
+}
+
+.formRight {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-areas:
+    'vazio vazio vazio vazio'
+    'laCPF cpf laRG rg' 
+    'laTel tel laCel cel' 
+    'laEmail email email email';
+    align-items: center;
+    justify-items: end;
+    gap: 15px;
+}
+
+.formRight .laCPF {
+    grid-area: laCPF;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: flex-end;
+}
+
+.formRight input[name="cpf"] {
+    grid-area: cpf;
+}
+
+.formRight .laRG {
+    grid-area: laRG;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: flex-end;
+}
+
+.formRight input[name="rg"] {
+    grid-area: rg;
+}
+
+.formRight .laTel {
+    grid-area: laTel;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: flex-end;
+}
+
+.formRight input[name="tel"] {
+    grid-area: tel;
+}
+
+
+.formRight .laCel {
+    grid-area: laCel;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: flex-end;
+}
+
+.formRight input[name="cel"] {
+    grid-area: cel;
+}
+
+
+.formRight .laEmail {
+    grid-area: laEmail;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: flex-end;
+}
+
+.formRight input[name="email"] {
+    grid-area: email;
+}
+
+.formRight .vazio{
+    grid-area: vazio;
+}
+
+.formRight input[name="vazio"] {
+    visibility: hidden;
 }
